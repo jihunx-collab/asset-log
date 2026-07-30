@@ -37,7 +37,7 @@ function parsePostFile(dir: string, filename: string): PostMeta & { body: string
   return {
     slug,
     title: data.title,
-    date: String(data.date),
+    date: data.date instanceof Date ? data.date.toISOString().slice(0, 10) : String(data.date),
     category: data.category,
     tags: data.tags ?? [],
     excerpt: makeExcerpt(content),

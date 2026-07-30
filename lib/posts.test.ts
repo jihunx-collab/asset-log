@@ -39,6 +39,12 @@ describe('posts library', () => {
     expect(postB?.tags).toEqual([]);
   });
 
+  it('normalizes frontmatter dates to YYYY-MM-DD strings', () => {
+    const posts = getAllPostsMeta(fixturesDir);
+    const postA = posts.find((p) => p.slug === 'post-a');
+    expect(postA?.date).toBe('2026-01-01');
+  });
+
   it('collects unique categories', () => {
     expect(getAllCategories(fixturesDir).sort()).toEqual(['RWA', 'STO']);
   });
