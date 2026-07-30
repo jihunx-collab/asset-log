@@ -84,3 +84,11 @@ describe('posts library — invalid frontmatter', () => {
     expect(() => getAllPostsMeta(fixturesDir)).toThrow(/date/);
   });
 });
+
+describe('posts library — missing posts directory', () => {
+  it('returns an empty list instead of throwing when the directory does not exist', () => {
+    const missingDir = path.join(os.tmpdir(), 'posts-does-not-exist-' + Date.now());
+    expect(() => getAllPostsMeta(missingDir)).not.toThrow();
+    expect(getAllPostsMeta(missingDir)).toEqual([]);
+  });
+});

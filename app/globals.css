@@ -1,15 +1,5 @@
 @import "tailwindcss";
 
-:root {
-  --color-al-navy: #12181f;
-  --color-al-navy-dark: #0e131a;
-  --color-al-silver: #c7cdd6;
-  --color-al-sage: #7a9a8e;
-  --color-al-label: #8a8f98;
-  --color-al-muted: #6b7078;
-  --color-al-divider: #232b35;
-}
-
 @theme inline {
   --color-al-navy: #12181f;
   --color-al-navy-dark: #0e131a;
@@ -25,9 +15,20 @@
 .prose-content h1,
 .prose-content h2,
 .prose-content h3 {
-  font-family: Georgia, "Noto Serif KR", serif;
+  font-family: var(--font-serif);
+  color: var(--color-al-silver);
+  font-weight: 600;
   margin-top: 1.5em;
   margin-bottom: 0.6em;
+}
+.prose-content h1 {
+  font-size: 1.5rem;
+}
+.prose-content h2 {
+  font-size: 1.35rem;
+}
+.prose-content h3 {
+  font-size: 1.15rem;
 }
 .prose-content p {
   margin-bottom: 1em;
@@ -36,4 +37,17 @@
 .prose-content ol {
   margin-bottom: 1em;
   padding-left: 1.25em;
+}
+.prose-content ul {
+  list-style: disc;
+  list-style-position: outside;
+}
+.prose-content ol {
+  list-style: decimal;
+  list-style-position: outside;
+}
+.prose-content a {
+  color: var(--color-al-sage);
+  text-decoration: underline;
+  text-underline-offset: 2px;
 }

@@ -46,9 +46,12 @@ function parsePostFile(dir: string, filename: string): PostMeta & { body: string
 }
 
 export function getAllPostsMeta(postsDir: string = DEFAULT_POSTS_DIR): PostMeta[] {
+  if (!fs.existsSync(postsDir)) {
+    return [];
+  }
   const filenames = fs.readdirSync(postsDir).filter((f) => f.endsWith('.md'));
   const posts = filenames.map((filename) => {
-    const { body, ...meta } = parsePostFile(postsDir, filename);
+    const { body: _body, ...meta } = parsePostFile(postsDir, filename);
     return meta;
   });
   return posts.sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime());

@@ -6,7 +6,7 @@ export default function Nav() {
     <header className="border-b border-al-divider">
       <div className="max-w-2xl mx-auto px-6 py-4 flex items-center justify-between">
         <Link href="/" className="flex items-center gap-2.5">
-          <Image src="/logo.jpg" alt="Asset Log" width={32} height={32} className="rounded" />
+          <Image src="/logo.jpg" alt="" width={32} height={32} className="rounded" />
           <span className="font-serif text-sm tracking-wide text-al-silver">ASSET LOG</span>
         </Link>
         <nav className="flex gap-5 font-sans text-xs text-al-label">

@@ -43,3 +43,6 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# leftover logo source (already copied into public/logo.jpg and app/icon.jpg)
+IMG_0794.jpg
