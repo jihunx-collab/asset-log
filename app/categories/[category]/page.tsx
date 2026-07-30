@@ -12,16 +12,17 @@ export default async function CategoryPage({
   params: Promise<{ category: string }>;
 }) {
   const { category } = await params;
+  const decoded = decodeURIComponent(category);
 
-  if (!getAllCategories().includes(category)) {
+  if (!getAllCategories().includes(decoded)) {
     notFound();
   }
 
-  const posts = getPostsByCategory(category);
+  const posts = getPostsByCategory(decoded);
 
   return (
     <div>
-      <h1 className="font-serif text-xl text-al-silver mb-6">{category}</h1>
+      <h1 className="font-serif text-xl text-al-silver mb-6">{decoded}</h1>
       {posts.length === 0 ? (
         <p className="font-sans text-sm text-al-muted">아직 없음</p>
       ) : (
