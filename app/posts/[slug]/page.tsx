@@ -1,7 +1,6 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { getAllPostsMeta, getPostContent } from "@/lib/posts";
-import PostCard from "@/components/PostCard";
 
 const OTHER_POSTS_LIMIT = 5;
 
@@ -66,10 +65,19 @@ export default async function PostPage({
 
       {otherPosts.length > 0 && (
         <div className="mt-10 pt-6 border-t border-al-divider">
-          <h2 className="font-serif text-lg text-al-silver mb-6">다른 글</h2>
-          {otherPosts.map((otherPost) => (
-            <PostCard key={otherPost.slug} post={otherPost} />
-          ))}
+          <h2 className="font-serif text-lg text-al-silver mb-4">다른 글</h2>
+          <ul className="space-y-2">
+            {otherPosts.map((otherPost) => (
+              <li key={otherPost.slug}>
+                <Link
+                  href={`/posts/${otherPost.slug}`}
+                  className="block truncate font-sans text-xs text-al-muted hover:text-al-sage"
+                >
+                  {otherPost.title}
+                </Link>
+              </li>
+            ))}
+          </ul>
         </div>
       )}
     </article>
