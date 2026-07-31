@@ -18,7 +18,7 @@ export default function CategoriesIndexPage() {
                 className="font-sans text-sm text-al-sage"
               >
                 {category}
-                <span className="text-al-muted"> ({getPostsByCategory(category).length})</span>
+                <span className="text-al-muted ml-1">({getPostsByCategory(category).length})</span>
               </Link>
             </li>
           ))}
