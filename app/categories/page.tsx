@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { getAllCategories } from "@/lib/posts";
+import { getAllCategories, getPostsByCategory } from "@/lib/posts";
 
 export default function CategoriesIndexPage() {
   const categories = getAllCategories();
@@ -18,6 +18,7 @@ export default function CategoriesIndexPage() {
                 className="font-sans text-sm text-al-sage"
               >
                 {category}
+                <span className="text-al-muted"> ({getPostsByCategory(category).length})</span>
               </Link>
             </li>
           ))}
