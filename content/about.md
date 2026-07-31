@@ -1,5 +1,10 @@
-# About
+# Asset Log
 
-이 사이트는 **Asset Log**라는 이름으로 대체투자(사모펀드·RWA·STO 등)를 공부하고 기록하는 개인 아카이브입니다.
+주식, 대체투자 및 부동산 PF 분석 아카이브를 기록하는 개인 사이트입니다.
 
-자기소개는 아직 준비 중입니다 — 곧 채워 넣을 예정입니다.
+## 관심 분야
+
+- SKKU Business & Culture · Tech
+- Alternative Investment & Real Estate PF Analysis
+- Macro & Global Economic Insight
+- Equity Market & Industry Research
