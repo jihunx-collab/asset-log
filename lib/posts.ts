@@ -2,6 +2,7 @@ import fs from 'node:fs';
 import path from 'node:path';
 import matter from 'gray-matter';
 import { remark } from 'remark';
+import remarkGfm from 'remark-gfm';
 import html from 'remark-html';
 
 const DEFAULT_POSTS_DIR = path.join(process.cwd(), 'content', 'posts');
@@ -78,6 +79,6 @@ export async function getPostContent(
     return null;
   }
   const { body, ...meta } = parsePostFile(postsDir, filename);
-  const processed = await remark().use(html).process(body);
+  const processed = await remark().use(remarkGfm).use(html).process(body);
   return { meta, contentHtml: processed.toString() };
 }
