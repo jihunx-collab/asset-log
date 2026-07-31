@@ -10,6 +10,7 @@ export default function HomePage() {
 
   return (
     <div>
+      <p className="font-sans text-xs text-al-label mb-6">총 {posts.length}편</p>
       {posts.map((post) => (
         <PostCard key={post.slug} post={post} />
       ))}
