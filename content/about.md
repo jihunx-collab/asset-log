@@ -4,7 +4,6 @@
 
 ## 관심 분야
 
-- Sungkyunkwan University Business & Culture · Tech
 - Alternative Investment & Real Estate PF Analysis
 - Macro & Global Economic Insight
 - Equity Market & Industry Research
@@ -12,6 +11,8 @@
 ## 학력
 
 - 성균관대학교(Sungkyunkwan University)
+  - Bachelor of Culture and Technology
+  - Bachelor of Business Administration - BBA
 
 ## Contact
 
