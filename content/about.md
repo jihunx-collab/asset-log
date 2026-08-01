@@ -4,14 +4,14 @@
 
 ## 관심 분야
 
-- SKKU Business & Culture · Tech
+- Sungkyunkwan University Business & Culture · Tech
 - Alternative Investment & Real Estate PF Analysis
 - Macro & Global Economic Insight
 - Equity Market & Industry Research
 
 ## 학력
 
-- 성균관대학교(SKKU)
+- 성균관대학교(Sungkyunkwan University)
 
 ## Contact
 
