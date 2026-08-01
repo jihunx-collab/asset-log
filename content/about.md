@@ -8,3 +8,11 @@
 - Alternative Investment & Real Estate PF Analysis
 - Macro & Global Economic Insight
 - Equity Market & Industry Research
+
+## 학력
+
+- 성균관대학교(SKKU)
+
+## Contact
+
+- Email: juun5005@gmail.com
