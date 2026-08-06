@@ -79,6 +79,6 @@ export async function getPostContent(
     return null;
   }
   const { body, ...meta } = parsePostFile(postsDir, filename);
-  const processed = await remark().use(remarkGfm).use(html).process(body);
+  const processed = await remark().use(remarkGfm).use(html, { sanitize: false }).process(body);
   return { meta, contentHtml: processed.toString() };
 }
