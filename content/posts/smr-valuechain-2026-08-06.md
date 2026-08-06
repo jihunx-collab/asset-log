@@ -25,24 +25,51 @@ SMR이 최근에 갑자기 등장한 개념은 아닙니다. 2010년 빌 게이�
 
 ## 2. SMR 밸류체인
 
-산업을 볼 때는 구조부터 잡는 게 먼저라고 생각합니다. 한눈에 흐름부터 보면 이렇습니다.
+산업을 볼 때는 구조부터 잡는 게 먼저라고 생각합니다. 여섯 단계로 정리했습니다.
 
-> **① 설계·노형 개발**(NuScale·TerraPower·X-energy·Oklo·i-SMR) → **② 핵연료(HALEU)**(X-energy) → **③ 주기기·부품 제작**(두산에너빌리티) → **④ EPC·시공**(삼성물산·현대건설) → **⑤ 발전·구매**(Google·Amazon) → **⑥ 정책·규제**(산업통상자원부)
+<div class="vc-wrap">
+<style>
+.vc-wrap { margin: 1.5em 0; }
+.vc-wrap .vc-eyebrow { font-size: 11px; font-weight: 600; letter-spacing: 0.08em; color: var(--color-al-muted); margin: 0 0 6px; }
+.vc-wrap .vc-scroll { overflow-x: auto; padding-bottom: 8px; margin: 0 -2px; }
+.vc-wrap .vc-flow { display: flex; gap: 2px; padding: 0 2px; }
+.vc-wrap .vc-cell { display: flex; align-items: center; flex: 0 0 auto; }
+.vc-wrap .vc-card { width: 148px; min-height: 202px; background: rgba(255,255,255,0.03); border: 1px solid var(--color-al-divider); border-top: 3px solid var(--c); border-radius: 8px; padding: 12px 11px; display: flex; flex-direction: column; gap: 7px; }
+.vc-wrap .vc-idx { font-size: 10px; font-weight: 700; letter-spacing: 0.05em; color: var(--c); }
+.vc-wrap .vc-card h4 { margin: 0; font-size: 12.5px; font-weight: 600; line-height: 1.35; color: var(--color-al-silver); font-family: var(--font-sans); }
+.vc-wrap .vc-card p { margin: 0; font-size: 11px; line-height: 1.4; color: var(--color-al-muted); flex: 1; }
+.vc-wrap .vc-chips { display: flex; flex-wrap: wrap; gap: 3px; }
+.vc-wrap .vc-chip { font-size: 9.5px; font-weight: 500; padding: 2px 5px; border-radius: 5px; background: rgba(255,255,255,0.05); border: 1px solid var(--color-al-divider); color: var(--color-al-silver); white-space: nowrap; }
+.vc-wrap .vc-label { align-self: flex-start; font-size: 9.5px; font-weight: 600; padding: 1px 6px; border-radius: 999px; background: color-mix(in srgb, var(--c) 20%, transparent); color: var(--c); }
+.vc-wrap .vc-arrow { flex: 0 0 auto; width: 14px; height: 14px; color: var(--color-al-muted); margin: 0 2px; }
+.vc-wrap .vc-note { font-size: 11px; color: var(--color-al-muted); margin: 8px 0 0; }
+.vc-wrap .vc-scroll-hint { font-size: 10.5px; color: var(--color-al-muted); margin: 0 0 6px; }
+</style>
+<p class="vc-eyebrow">INDUSTRY VALUE CHAIN</p>
+<p class="vc-scroll-hint">← 옆으로 스크롤하면 6단계를 전부 볼 수 있습니다 →</p>
+<div class="vc-scroll">
+<div class="vc-flow">
 
-이 흐름을 표로 조금 더 풀면 아래와 같습니다.
+<div class="vc-cell"><div class="vc-card" style="--c:#3987e5"><span class="vc-idx">01</span><h4>원자로 설계·노형 개발</h4><p>SMR 노형(설계) 개발, 인허가 추진</p><div class="vc-chips"><span class="vc-chip">NuScale</span><span class="vc-chip">TerraPower</span><span class="vc-chip">X-energy</span><span class="vc-chip">Oklo</span><span class="vc-chip">i-SMR 사업단</span></div><span class="vc-label">2차</span></div><svg class="vc-arrow" viewBox="0 0 16 16" fill="none"><path d="M2 8h11M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
 
-| 단계 | 무엇을 하는 단계인가 | 대표 플레이어 |
-|---|---|---|
-| ① 원자로 설계·노형 개발 | SMR 노형(설계) 개발, 인허가 추진 | NuScale Power, TerraPower, X-energy, Oklo (해외) / i-SMR 사업단(국내) |
-| ② 핵연료(HALEU) 공급 | 고순도 저농축우라늄 생산·공급 | X-energy — 국내 기업 역할은 아직 뚜렷하지 않음 |
-| ③ 주기기·부품 제작 | 원자로 주기기·모듈 제작 | 두산에너빌리티(테라파워·뉴스케일·엑스에너지·롤스로이스와 협력) |
-| ④ EPC·시공 | 설계·조달·시공, 초도호기 시공권 경쟁 | 삼성물산(뉴스케일 지분투자·FEED), 현대건설(홀텍 SMR-160 EPC권) |
-| ⑤ 발전·구매(다운스트림) | 전력구매계약(PPA), 데이터센터向 전력 공급 | Google, Amazon |
-| ⑥ 정책·규제(국내) | 국가전략산업 지정, 인허가 체계 | 산업통상자원부, 탄소중립녹색성장위원회 |
+<div class="vc-cell"><div class="vc-card" style="--c:#d95926"><span class="vc-idx">02</span><h4>핵연료(HALEU) 공급</h4><p>고순도 저농축우라늄 생산·공급</p><div class="vc-chips"><span class="vc-chip">X-energy</span></div><span class="vc-label">2차</span></div><svg class="vc-arrow" viewBox="0 0 16 16" fill="none"><path d="M2 8h11M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
 
-여기까지가 SMR 산업의 전체 구조입니다. 단계별 출처까지 하나씩 클릭해서 더 파고들고 싶을 때만 아래 지도를 열어보시면 됩니다 — 안 열어봐도 흐름과 기업은 위에서 이미 다 보실 수 있습니다.
+<div class="vc-cell"><div class="vc-card" style="--c:#199e70"><span class="vc-idx">03</span><h4>주기기·부품 제작</h4><p>원자로 주기기·모듈 제작</p><div class="vc-chips"><span class="vc-chip">두산에너빌리티</span></div><span class="vc-label">2차</span></div><svg class="vc-arrow" viewBox="0 0 16 16" fill="none"><path d="M2 8h11M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
 
-**밸류체인 지도(선택)**: https://claude.ai/code/artifact/4298efe8-8152-4b37-9562-331695fd08d2
+<div class="vc-cell"><div class="vc-card" style="--c:#c98500"><span class="vc-idx">04</span><h4>EPC·시공</h4><p>설계·조달·시공, 초도호기 시공권 경쟁</p><div class="vc-chips"><span class="vc-chip">삼성물산</span><span class="vc-chip">현대건설</span></div><span class="vc-label">2차</span></div><svg class="vc-arrow" viewBox="0 0 16 16" fill="none"><path d="M2 8h11M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+
+<div class="vc-cell"><div class="vc-card" style="--c:#d55181"><span class="vc-idx">05</span><h4>발전·구매(다운스트림)</h4><p>전력구매계약(PPA), 데이터센터向 공급</p><div class="vc-chips"><span class="vc-chip">Google</span><span class="vc-chip">Amazon</span></div><span class="vc-label">2차</span></div><svg class="vc-arrow" viewBox="0 0 16 16" fill="none"><path d="M2 8h11M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+
+<div class="vc-cell"><div class="vc-card" style="--c:#9085e9"><span class="vc-idx">06</span><h4>정책·규제(국내)</h4><p>국가전략산업 지정, 인허가 체계</p><div class="vc-chips"><span class="vc-chip">산업통상자원부</span><span class="vc-chip">탄소중립녹색성장위원회</span></div><span class="vc-label">1차</span></div></div>
+
+</div>
+</div>
+<p class="vc-note">라벨 [1차]는 정부·공식 발표, [2차]는 뉴스·리서치 재확인 기반입니다.</p>
+</div>
+
+단계별로 클릭해서 상세 설명과 출처까지 하나씩 더 파고들고 싶다면, 인터랙티브 지도도 따로 있습니다(선택 사항입니다 — 안 열어봐도 위에서 이미 흐름과 기업은 다 보실 수 있습니다).
+
+**밸류체인 지도(Artifact, 선택)**: https://claude.ai/code/artifact/4298efe8-8152-4b37-9562-331695fd08d2
 
 ## 3. 왜 지금 SMR인가 — AI 데이터센터의 전력 수요
 
