@@ -313,7 +313,7 @@ export default function PostEditor({ mode, initial }: PostEditorProps) {
           type="button"
           disabled={saving !== null}
           onClick={() => save('published')}
-          className="px-4 py-2 rounded bg-al-sage text-al-navy-dark text-sm font-medium hover:opacity-90 transition-opacity disabled:opacity-50"
+          className="px-4 py-2 rounded bg-al-sage text-al-on-accent text-sm font-medium hover:opacity-90 transition-opacity disabled:opacity-50"
         >
           {saving === 'published' ? '발행 중...' : '발행하기'}
         </button>

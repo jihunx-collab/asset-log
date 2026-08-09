@@ -13,7 +13,7 @@ export default function AdminLoginPage() {
       >
         <button
           type="submit"
-          className="px-4 py-2 rounded bg-al-sage text-al-navy-dark text-sm font-medium hover:opacity-90 transition-opacity"
+          className="px-4 py-2 rounded bg-al-sage text-al-on-accent text-sm font-medium hover:opacity-90 transition-opacity"
         >
           Google로 로그인
         </button>

@@ -13,7 +13,7 @@ export default function AdminHomePage() {
         <h1 className="font-serif text-lg text-al-silver">글 관리</h1>
         <Link
           href="/admin/posts/new"
-          className="px-3 py-1.5 rounded bg-al-sage text-al-navy-dark text-xs font-medium hover:opacity-90 transition-opacity"
+          className="px-3 py-1.5 rounded bg-al-sage text-al-on-accent text-xs font-medium hover:opacity-90 transition-opacity"
         >
           새 글 작성
         </Link>

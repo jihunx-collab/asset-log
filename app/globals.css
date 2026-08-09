@@ -11,21 +11,25 @@
   --color-al-label: var(--al-text-label);
   --color-al-muted: var(--al-text-muted);
   --color-al-divider: var(--al-divider);
+  --color-al-on-accent: var(--al-on-accent);
   --font-serif: Georgia, "Noto Serif KR", serif;
   --font-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
 }
 
 /* Light palette (default — also what unstamped "system" viewers see in a
    light OS). Accent: Growth Green, picked from the Asset Log light-mode
-   mockup review (2026-08-10). */
+   mockup review (2026-08-10). Surface/divider tuned down from an earlier,
+   too-stark-white pass (2026-08-10 feedback) so the divider actually reads
+   against the page. */
 :root {
-  --al-surface: #f5f6f8;
-  --al-surface-raised: #ffffff;
+  --al-surface: #eef0f2;
+  --al-surface-raised: #e7e9ec;
   --al-text: #1b2027;
   --al-accent: #0e8f45;
   --al-text-label: #5b6068;
   --al-text-muted: #9297a0;
-  --al-divider: #e3e6ea;
+  --al-divider: #cdd3da;
+  --al-on-accent: #ffffff;
 }
 
 /* System dark preference wins unless the reader explicitly chose light. */
@@ -38,6 +42,7 @@
     --al-text-label: #8a8f98;
     --al-text-muted: #6b7078;
     --al-divider: #232b35;
+    --al-on-accent: #0e131a;
   }
 }
 
@@ -50,6 +55,7 @@
   --al-text-label: #8a8f98;
   --al-text-muted: #6b7078;
   --al-divider: #232b35;
+  --al-on-accent: #0e131a;
 }
 
 .prose-content h1,
