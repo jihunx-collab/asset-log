@@ -1,15 +1,55 @@
 @import "tailwindcss";
 
+/* Tailwind utility names (bg-al-navy, text-al-silver, ...) stay as-is for
+   compatibility with every existing component — only the underlying values
+   become theme-dependent below. */
 @theme inline {
-  --color-al-navy: #12181f;
-  --color-al-navy-dark: #0e131a;
-  --color-al-silver: #c7cdd6;
-  --color-al-sage: #7a9a8e;
-  --color-al-label: #8a8f98;
-  --color-al-muted: #6b7078;
-  --color-al-divider: #232b35;
+  --color-al-navy: var(--al-surface);
+  --color-al-navy-dark: var(--al-surface-raised);
+  --color-al-silver: var(--al-text);
+  --color-al-sage: var(--al-accent);
+  --color-al-label: var(--al-text-label);
+  --color-al-muted: var(--al-text-muted);
+  --color-al-divider: var(--al-divider);
   --font-serif: Georgia, "Noto Serif KR", serif;
   --font-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+/* Light palette (default — also what unstamped "system" viewers see in a
+   light OS). Accent: Growth Green, picked from the Asset Log light-mode
+   mockup review (2026-08-10). */
+:root {
+  --al-surface: #f5f6f8;
+  --al-surface-raised: #ffffff;
+  --al-text: #1b2027;
+  --al-accent: #0e8f45;
+  --al-text-label: #5b6068;
+  --al-text-muted: #9297a0;
+  --al-divider: #e3e6ea;
+}
+
+/* System dark preference wins unless the reader explicitly chose light. */
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --al-surface: #12181f;
+    --al-surface-raised: #0e131a;
+    --al-text: #c7cdd6;
+    --al-accent: #7a9a8e;
+    --al-text-label: #8a8f98;
+    --al-text-muted: #6b7078;
+    --al-divider: #232b35;
+  }
+}
+
+/* Explicit toggle (footer button) always wins, in both directions. */
+:root[data-theme="dark"] {
+  --al-surface: #12181f;
+  --al-surface-raised: #0e131a;
+  --al-text: #c7cdd6;
+  --al-accent: #7a9a8e;
+  --al-text-label: #8a8f98;
+  --al-text-muted: #6b7078;
+  --al-divider: #232b35;
 }
 
 .prose-content h1,
