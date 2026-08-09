@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { getAllPostsMeta, getPostContent } from "@/lib/posts";
+import EditPostButton from "@/components/admin/EditPostButton";
 
 const OTHER_POSTS_LIMIT = 5;
 
@@ -31,10 +32,13 @@ export default async function PostPage({
       <Link href="/" className="inline-block mb-6 font-sans text-xs text-al-label">
         ← Home
       </Link>
-      <div className="flex gap-2 mb-3 font-sans text-[10px] text-al-sage tracking-wide">
-        <span>{post.meta.category}</span>
-        <span className="text-al-muted">·</span>
-        <span className="text-al-muted">{post.meta.date}</span>
+      <div className="flex items-center justify-between gap-2 mb-3">
+        <div className="flex gap-2 font-sans text-[10px] text-al-sage tracking-wide">
+          <span>{post.meta.category}</span>
+          <span className="text-al-muted">·</span>
+          <span className="text-al-muted">{post.meta.date}</span>
+        </div>
+        <EditPostButton slug={slug} />
       </div>
       <h1 className="font-serif text-2xl leading-snug text-al-silver mb-6">
         {post.meta.title}

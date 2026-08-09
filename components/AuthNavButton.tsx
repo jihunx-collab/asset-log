@@ -12,13 +12,18 @@ export default function AuthNavButton() {
 
   if (session) {
     return (
-      <button
-        type="button"
-        onClick={() => signOut({ callbackUrl: '/' })}
-        className="text-al-label hover:text-al-silver"
-      >
-        로그아웃
-      </button>
+      <>
+        <Link href="/admin" className="text-al-label hover:text-al-silver">
+          글 관리
+        </Link>
+        <button
+          type="button"
+          onClick={() => signOut({ callbackUrl: '/' })}
+          className="text-al-label hover:text-al-silver"
+        >
+          로그아웃
+        </button>
+      </>
     );
   }
 
