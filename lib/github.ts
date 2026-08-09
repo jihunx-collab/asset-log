@@ -58,6 +58,29 @@ export async function putFile(
   });
 }
 
+/**
+ * Same as putFile but takes content that is already base64-encoded, so
+ * binary files (images) round-trip without going through a UTF-8 buffer
+ * that would corrupt them.
+ */
+export async function putBinaryFile(
+  path: string,
+  base64Content: string,
+  message: string
+): Promise<void> {
+  const octokit = getClient();
+  const { owner, repo } = getRepo();
+  const existing = await getFile(path);
+  await octokit.repos.createOrUpdateFileContents({
+    owner,
+    repo,
+    path,
+    message,
+    content: base64Content,
+    sha: existing?.sha,
+  });
+}
+
 export async function deleteFile(path: string, message: string): Promise<void> {
   const octokit = getClient();
   const { owner, repo } = getRepo();

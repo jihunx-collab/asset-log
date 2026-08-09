@@ -1,15 +1,31 @@
 'use client';
 
-import { useState } from 'react';
+import { useRef, useState } from 'react';
 import { useRouter } from 'next/navigation';
 import { useEditor, EditorContent } from '@tiptap/react';
 import StarterKit from '@tiptap/starter-kit';
 import { Link as TiptapLink } from '@tiptap/extension-link';
+import { Image as TiptapImage } from '@tiptap/extension-image';
 import { Table } from '@tiptap/extension-table';
 import { TableRow } from '@tiptap/extension-table-row';
 import { TableHeader } from '@tiptap/extension-table-header';
 import { TableCell } from '@tiptap/extension-table-cell';
 import { Markdown, type MarkdownStorage } from 'tiptap-markdown';
+
+const MAX_IMAGE_BYTES = 3 * 1024 * 1024;
+
+function fileToBase64(file: File): Promise<string> {
+  return new Promise((resolve, reject) => {
+    const reader = new FileReader();
+    reader.onload = () => {
+      const result = reader.result as string;
+      // result is a data URL ("data:image/png;base64,AAAA...") — strip the prefix.
+      resolve(result.split(',')[1] ?? '');
+    };
+    reader.onerror = () => reject(reader.error);
+    reader.readAsDataURL(file);
+  });
+}
 
 const CATEGORIES = ['기업분석', '대체투자', '부동산', '산업분석', '크립토'];
 
@@ -53,11 +69,14 @@ export default function PostEditor({ mode, initial }: PostEditorProps) {
   const [saving, setSaving] = useState<'draft' | 'published' | null>(null);
   const [message, setMessage] = useState<string | null>(null);
   const [error, setError] = useState<string | null>(null);
+  const [uploadingImage, setUploadingImage] = useState(false);
+  const imageInputRef = useRef<HTMLInputElement>(null);
 
   const editor = useEditor({
     extensions: [
       StarterKit,
       TiptapLink.configure({ openOnClick: false }),
+      TiptapImage,
       Table.configure({ resizable: false }),
       TableRow,
       TableHeader,
@@ -129,6 +148,41 @@ export default function PostEditor({ mode, initial }: PostEditorProps) {
       setError(e instanceof Error ? e.message : '저장 중 오류가 발생했습니다.');
     } finally {
       setSaving(null);
+    }
+  }
+
+  async function handleImageSelected(file: File | undefined) {
+    if (!file || !editor) return;
+    setError(null);
+
+    if (file.size > MAX_IMAGE_BYTES) {
+      setError('이미지가 너무 큽니다. 3MB 이하로 줄여서 다시 시도해주세요.');
+      return;
+    }
+
+    setUploadingImage(true);
+    try {
+      const base64 = await fileToBase64(file);
+      const res = await fetch('/api/admin/upload', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ filename: file.name, mimeType: file.type, base64 }),
+      });
+
+      if (!res.ok) {
+        const data = await res.json().catch(() => ({}));
+        throw new Error(data.error ?? '이미지 업로드에 실패했습니다.');
+      }
+
+      const { url } = (await res.json()) as { url: string };
+      editor.chain().focus().setImage({ src: url }).run();
+    } catch (e) {
+      setError(e instanceof Error ? e.message : '이미지 업로드 중 오류가 발생했습니다.');
+    } finally {
+      setUploadingImage(false);
+      if (imageInputRef.current) {
+        imageInputRef.current.value = '';
+      }
     }
   }
 
@@ -210,6 +264,21 @@ export default function PostEditor({ mode, initial }: PostEditorProps) {
           >
             표 삽입
           </button>
+          <button
+            type="button"
+            className={toolbarBtn}
+            disabled={uploadingImage}
+            onClick={() => imageInputRef.current?.click()}
+          >
+            {uploadingImage ? '업로드 중...' : '사진 삽입'}
+          </button>
+          <input
+            ref={imageInputRef}
+            type="file"
+            accept="image/png,image/jpeg,image/gif,image/webp"
+            className="hidden"
+            onChange={(e) => handleImageSelected(e.target.files?.[0])}
+          />
         </div>
       )}
 
