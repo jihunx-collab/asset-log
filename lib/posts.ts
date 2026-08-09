@@ -6,6 +6,7 @@ import remarkGfm from 'remark-gfm';
 import html from 'remark-html';
 
 const DEFAULT_POSTS_DIR = path.join(process.cwd(), 'content', 'posts');
+const DEFAULT_DRAFTS_DIR = path.join(process.cwd(), 'content', 'drafts');
 
 export interface PostMeta {
   slug: string;
@@ -25,14 +26,17 @@ function makeExcerpt(body: string, maxLength = 80): string {
   return plain.length > maxLength ? `${plain.slice(0, maxLength)}...` : plain;
 }
 
-function parsePostFile(dir: string, filename: string): PostMeta & { body: string } {
-  const slug = filename.replace(/\.md$/, '');
-  const raw = fs.readFileSync(path.join(dir, filename), 'utf-8');
+/**
+ * Parses a raw markdown-with-frontmatter string. Does not touch the filesystem,
+ * so it can be reused for content fetched from GitHub (admin editor) as well
+ * as local files (build-time rendering).
+ */
+export function parsePostRaw(raw: string, slug: string): PostMeta & { body: string } {
   const { data, content } = matter(raw);
 
   const missing = ['title', 'date', 'category'].filter((field) => !data[field]);
   if (missing.length > 0) {
-    throw new Error(`${filename}: frontmatter에 필수 항목이 없습니다 (${missing.join(', ')})`);
+    throw new Error(`${slug}: frontmatter에 필수 항목이 없습니다 (${missing.join(', ')})`);
   }
 
   return {
@@ -46,16 +50,30 @@ function parsePostFile(dir: string, filename: string): PostMeta & { body: string
   };
 }
 
-export function getAllPostsMeta(postsDir: string = DEFAULT_POSTS_DIR): PostMeta[] {
-  if (!fs.existsSync(postsDir)) {
+function parsePostFile(dir: string, filename: string): PostMeta & { body: string } {
+  const slug = filename.replace(/\.md$/, '');
+  const raw = fs.readFileSync(path.join(dir, filename), 'utf-8');
+  return parsePostRaw(raw, slug);
+}
+
+function getAllMetaFromDir(dir: string): PostMeta[] {
+  if (!fs.existsSync(dir)) {
     return [];
   }
-  const filenames = fs.readdirSync(postsDir).filter((f) => f.endsWith('.md'));
+  const filenames = fs.readdirSync(dir).filter((f) => f.endsWith('.md'));
   const posts = filenames.map((filename) => {
-    const { body: _body, ...meta } = parsePostFile(postsDir, filename);
+    const { body: _body, ...meta } = parsePostFile(dir, filename);
     return meta;
   });
   return posts.sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime());
+}
+
+export function getAllPostsMeta(postsDir: string = DEFAULT_POSTS_DIR): PostMeta[] {
+  return getAllMetaFromDir(postsDir);
+}
+
+export function getAllDraftsMeta(draftsDir: string = DEFAULT_DRAFTS_DIR): PostMeta[] {
+  return getAllMetaFromDir(draftsDir);
 }
 
 export function getAllCategories(postsDir: string = DEFAULT_POSTS_DIR): string[] {
