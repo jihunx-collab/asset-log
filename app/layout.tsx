@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 import Nav from "@/components/Nav";
 import Footer from "@/components/Footer";
+import Providers from "./providers";
 
 export const metadata: Metadata = {
   title: "Asset Log",
@@ -12,9 +13,11 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="ko">
       <body className="bg-al-navy text-al-silver min-h-screen flex flex-col">
-        <Nav />
-        <main className="flex-1 max-w-2xl w-full mx-auto px-6 py-9">{children}</main>
-        <Footer />
+        <Providers>
+          <Nav />
+          <main className="flex-1 max-w-2xl w-full mx-auto px-6 py-9">{children}</main>
+          <Footer />
+        </Providers>
       </body>
     </html>
   );

@@ -1,5 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
+import AuthNavButton from "./AuthNavButton";
 
 export default function Nav() {
   return (
@@ -13,6 +14,7 @@ export default function Nav() {
           <Link href="/">Home</Link>
           <Link href="/categories">Categories</Link>
           <Link href="/about">About</Link>
+          <AuthNavButton />
         </nav>
       </div>
     </header>
