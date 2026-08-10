@@ -65,7 +65,16 @@ function getAllMetaFromDir(dir: string): PostMeta[] {
     const { body: _body, ...meta } = parsePostFile(dir, filename);
     return meta;
   });
-  return posts.sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime());
+  return posts.sort((a, b) => {
+    const byDate = new Date(b.date).getTime() - new Date(a.date).getTime();
+    if (byDate !== 0) {
+      return byDate;
+    }
+    // Same publication date (e.g. a multi-part series published together):
+    // fall back to slug descending so later parts sit above earlier ones,
+    // matching the newest-first ordering readers expect.
+    return b.slug.localeCompare(a.slug);
+  });
 }
 
 export function getAllPostsMeta(postsDir: string = DEFAULT_POSTS_DIR): PostMeta[] {
