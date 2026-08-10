@@ -27,57 +27,7 @@ tags: [원화 스테이블코인, CBDC, 예금토큰, 디지털자산기본법, 
 
 문제는 그 사이 미국이 이미 끝냈다는 점입니다.
 
-<div style="border:1px solid var(--al-divider);border-radius:8px;padding:20px;margin:24px 0;background:var(--al-surface-raised);">
-  <div style="font-size:13px;letter-spacing:0.04em;color:var(--al-text-label);margin-bottom:4px;">스테이블코인 법제화 타임라인</div>
-  <div style="font-size:12px;color:var(--al-text-muted);margin-bottom:20px;">미국 · 한국 병렬 비교 (2026년 8월 기준)</div>
-
-  <div style="overflow-x:auto;">
-  <div style="min-width:520px;">
-
-    <div style="display:grid;grid-template-columns:88px 1fr 1fr;gap:12px;padding-bottom:10px;border-bottom:1px solid var(--al-divider);">
-      <div style="font-size:11px;color:var(--al-text-muted);">시점</div>
-      <div style="font-size:12px;color:var(--al-text);font-weight:600;">🇺🇸 미국</div>
-      <div style="font-size:12px;color:var(--al-text);font-weight:600;">🇰🇷 한국</div>
-    </div>
-
-    <div style="display:grid;grid-template-columns:88px 1fr 1fr;gap:12px;padding:14px 0;border-bottom:1px solid var(--al-divider);">
-      <div style="font-size:12px;color:var(--al-text-label);">2025.6</div>
-      <div style="font-size:13px;color:var(--al-text);">6.17 상원 통과<div style="font-size:11px;color:var(--al-text-muted);margin-top:3px;">GENIUS Act · 68 대 30</div></div>
-      <div style="font-size:13px;color:var(--al-text);">6.10 디지털자산기본법 발의<div style="font-size:11px;color:var(--al-text-muted);margin-top:3px;">민병덕 의원 대표발의</div></div>
-    </div>
-
-    <div style="display:grid;grid-template-columns:88px 1fr 1fr;gap:12px;padding:14px 0;border-bottom:1px solid var(--al-divider);">
-      <div style="font-size:12px;color:var(--al-text-label);">2025.7</div>
-      <div style="font-size:13px;color:var(--al-accent);font-weight:600;">7.17 하원 통과 → 7.18 서명·발효<div style="font-size:11px;color:var(--al-text-muted);margin-top:3px;font-weight:400;">308 대 122 · 연방법 성립</div></div>
-      <div style="font-size:13px;color:var(--al-text);">지급혁신법 발의<div style="font-size:11px;color:var(--al-text-muted);margin-top:3px;">김은혜 의원</div></div>
-    </div>
-
-    <div style="display:grid;grid-template-columns:88px 1fr;gap:12px;padding:12px;margin:10px 0;background:var(--al-surface);border-left:2px solid var(--al-accent);border-radius:3px;">
-      <div style="font-size:12px;color:var(--al-accent);font-weight:600;">2025.10</div>
-      <div style="font-size:12px;color:var(--al-text-label);">학술제 보고서 작성 시점 — 이 아래부터가 보고서에 담기지 못한 구간입니다</div>
-    </div>
-
-    <div style="display:grid;grid-template-columns:88px 1fr 1fr;gap:12px;padding:14px 0;border-bottom:1px solid var(--al-divider);">
-      <div style="font-size:12px;color:var(--al-text-label);">2026.3</div>
-      <div style="font-size:13px;color:var(--al-text-muted);">시행 중</div>
-      <div style="font-size:13px;color:var(--al-text);">3.4 제1차 가상자산위원회<div style="font-size:11px;color:var(--al-text-muted);margin-top:3px;">정부 검토안 의견 수렴</div></div>
-    </div>
-
-    <div style="display:grid;grid-template-columns:88px 1fr 1fr;gap:12px;padding:14px 0;border-bottom:1px solid var(--al-divider);">
-      <div style="font-size:12px;color:var(--al-text-label);">2026.4</div>
-      <div style="font-size:13px;color:var(--al-text-muted);">시행 중</div>
-      <div style="font-size:13px;color:var(--al-text);">정무위 법안소위 무산<div style="font-size:11px;color:var(--al-text-muted);margin-top:3px;">논의 사실상 중단</div></div>
-    </div>
-
-    <div style="display:grid;grid-template-columns:88px 1fr 1fr;gap:12px;padding:14px 0;">
-      <div style="font-size:12px;color:var(--al-text-label);">2026.8</div>
-      <div style="font-size:13px;color:var(--al-accent);font-weight:600;">시행 13개월째</div>
-      <div style="font-size:13px;color:var(--al-text);">정무위 소위 계류<div style="font-size:11px;color:var(--al-text-muted);margin-top:3px;">발의 후 14개월째</div></div>
-    </div>
-
-  </div>
-  </div>
-</div>
+<div style="border:1px solid var(--al-divider);border-radius:8px;padding:20px;margin:24px 0;background:var(--al-surface-raised);"><div style="font-size:13px;letter-spacing:0.04em;color:var(--al-text-label);margin-bottom:4px;">스테이블코인 법제화 타임라인</div><div style="font-size:12px;color:var(--al-text-muted);margin-bottom:20px;">미국 · 한국 병렬 비교 (2026년 8월 기준)</div><div style="overflow-x:auto;"><div style="min-width:520px;"><div style="display:grid;grid-template-columns:88px 1fr 1fr;gap:12px;padding-bottom:10px;border-bottom:1px solid var(--al-divider);"><div style="font-size:11px;color:var(--al-text-muted);">시점</div><div style="font-size:12px;color:var(--al-text);font-weight:600;">🇺🇸 미국</div><div style="font-size:12px;color:var(--al-text);font-weight:600;">🇰🇷 한국</div></div><div style="display:grid;grid-template-columns:88px 1fr 1fr;gap:12px;padding:14px 0;border-bottom:1px solid var(--al-divider);"><div style="font-size:12px;color:var(--al-text-label);">2025.6</div><div style="font-size:13px;color:var(--al-text);">6.17 상원 통과<div style="font-size:11px;color:var(--al-text-muted);margin-top:3px;">GENIUS Act · 68 대 30</div></div><div style="font-size:13px;color:var(--al-text);">6.10 디지털자산기본법 발의<div style="font-size:11px;color:var(--al-text-muted);margin-top:3px;">민병덕 의원 대표발의</div></div></div><div style="display:grid;grid-template-columns:88px 1fr 1fr;gap:12px;padding:14px 0;border-bottom:1px solid var(--al-divider);"><div style="font-size:12px;color:var(--al-text-label);">2025.7</div><div style="font-size:13px;color:var(--al-accent);font-weight:600;">7.17 하원 통과 → 7.18 서명·발효<div style="font-size:11px;color:var(--al-text-muted);margin-top:3px;font-weight:400;">308 대 122 · 연방법 성립</div></div><div style="font-size:13px;color:var(--al-text);">지급혁신법 발의<div style="font-size:11px;color:var(--al-text-muted);margin-top:3px;">김은혜 의원</div></div></div><div style="display:grid;grid-template-columns:88px 1fr;gap:12px;padding:12px;margin:10px 0;background:var(--al-surface);border-left:2px solid var(--al-accent);border-radius:3px;"><div style="font-size:12px;color:var(--al-accent);font-weight:600;">2025.10</div><div style="font-size:12px;color:var(--al-text-label);">학술제 보고서 작성 시점 — 이 아래부터가 보고서에 담기지 못한 구간입니다</div></div><div style="display:grid;grid-template-columns:88px 1fr 1fr;gap:12px;padding:14px 0;border-bottom:1px solid var(--al-divider);"><div style="font-size:12px;color:var(--al-text-label);">2026.3</div><div style="font-size:13px;color:var(--al-text-muted);">시행 중</div><div style="font-size:13px;color:var(--al-text);">3.4 제1차 가상자산위원회<div style="font-size:11px;color:var(--al-text-muted);margin-top:3px;">정부 검토안 의견 수렴</div></div></div><div style="display:grid;grid-template-columns:88px 1fr 1fr;gap:12px;padding:14px 0;border-bottom:1px solid var(--al-divider);"><div style="font-size:12px;color:var(--al-text-label);">2026.4</div><div style="font-size:13px;color:var(--al-text-muted);">시행 중</div><div style="font-size:13px;color:var(--al-text);">정무위 법안소위 무산<div style="font-size:11px;color:var(--al-text-muted);margin-top:3px;">논의 사실상 중단</div></div></div><div style="display:grid;grid-template-columns:88px 1fr 1fr;gap:12px;padding:14px 0;"><div style="font-size:12px;color:var(--al-text-label);">2026.8</div><div style="font-size:13px;color:var(--al-accent);font-weight:600;">시행 13개월째</div><div style="font-size:13px;color:var(--al-text);">정무위 소위 계류<div style="font-size:11px;color:var(--al-text-muted);margin-top:3px;">발의 후 14개월째</div></div></div></div></div></div>
 
 두 나라가 거의 같은 시점에 출발했다는 게 이 표의 핵심입니다.
 
