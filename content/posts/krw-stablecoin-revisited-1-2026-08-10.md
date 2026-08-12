@@ -1,10 +1,14 @@
 ---
-title: "작년에 쓴 원화 스테이블코인 보고서를 다시 꺼냈습니다 - 1편"
-date: 2026-08-10
+title: 스테이블 코인의 필요성과 전략적 도입 모델 제언 - 1편
+date: '2026-08-10'
 category: 크립토
-tags: [원화 스테이블코인, 스테이블코인, 통화주권, CBDC, 크립토]
+tags:
+  - 원화 스테이블코인
+  - 스테이블코인
+  - 통화주권
+  - CBDC
+  - 크립토
 ---
-
 안녕하세요, Asset Log입니다.
 
 작년 10월, 교내 학술제에 「한국형 스테이블코인의 필요성과 전략적 도입 모델 제언」이라는 보고서를 냈습니다.
@@ -65,41 +69,29 @@ tags: [원화 스테이블코인, 스테이블코인, 통화주권, CBDC, 크립
 
 실제로 스테이블코인 시장은 달러가 거의 독점하고 있습니다.
 
-<div style="border:1px solid var(--al-divider);border-radius:8px;padding:20px;margin:24px 0;background:var(--al-surface-raised);">
-  <div style="font-size:13px;letter-spacing:0.04em;color:var(--al-text-label);margin-bottom:4px;">스테이블코인 시장 점유 구조</div>
-  <div style="font-size:12px;color:var(--al-text-muted);margin-bottom:18px;">2026년 6월 21일 기준 · 총 시가총액 약 3,147억 달러</div>
+스테이블코인 시장 점유 구조
 
-  <div style="display:flex;width:100%;height:34px;border-radius:4px;overflow:hidden;margin-bottom:10px;">
-    <div style="width:59.2%;background:var(--al-accent);display:flex;align-items:center;justify-content:center;font-size:12px;color:var(--al-on-accent);font-weight:600;">USDT 59.2%</div>
-    <div style="width:23.8%;background:color-mix(in srgb, var(--al-accent) 40%, var(--al-surface-raised));display:flex;align-items:center;justify-content:center;font-size:12px;color:var(--al-text);">USDC 23.8%</div>
-    <div style="width:5.6%;background:color-mix(in srgb, var(--al-accent) 18%, var(--al-surface-raised));"></div>
-    <div style="width:11.4%;background:var(--al-divider);"></div>
-  </div>
+2026년 6월 21일 기준 · 총 시가총액 약 3,147억 달러
 
-  <div style="display:flex;flex-wrap:wrap;gap:16px;font-size:12px;color:var(--al-text-muted);margin-bottom:18px;">
-    <span><span style="display:inline-block;width:9px;height:9px;background:var(--al-accent);border-radius:2px;margin-right:5px;"></span>USDT</span>
-    <span><span style="display:inline-block;width:9px;height:9px;background:color-mix(in srgb, var(--al-accent) 40%, var(--al-surface-raised));border-radius:2px;margin-right:5px;"></span>USDC</span>
-    <span><span style="display:inline-block;width:9px;height:9px;background:color-mix(in srgb, var(--al-accent) 18%, var(--al-surface-raised));border-radius:2px;margin-right:5px;"></span>기타 상위 3개</span>
-    <span><span style="display:inline-block;width:9px;height:9px;background:var(--al-divider);border-radius:2px;margin-right:5px;"></span>나머지 전체</span>
-  </div>
+**USDT 59.2%**
 
-  <div style="border-top:1px solid var(--al-divider);padding-top:14px;display:flex;flex-wrap:wrap;gap:28px;">
-    <div>
-      <div style="font-size:20px;color:var(--al-text);">83.0%</div>
-      <div style="font-size:11px;color:var(--al-text-muted);margin-top:2px;">USDT + USDC 합계</div>
-    </div>
-    <div>
-      <div style="font-size:20px;color:var(--al-text);">88.6%</div>
-      <div style="font-size:11px;color:var(--al-text-muted);margin-top:2px;">상위 5개 발행사 — 전부 달러 연동</div>
-    </div>
-    <div>
-      <div style="font-size:20px;color:var(--al-text);">0%</div>
-      <div style="font-size:11px;color:var(--al-text-muted);margin-top:2px;">원화 연동 스테이블코인 비중</div>
-    </div>
-  </div>
+USDC 23.8%
 
-  <div style="font-size:11px;color:var(--al-text-muted);margin-top:16px;">출처: CoinLaw 집계 기준</div>
-</div>
+USDT USDC 기타 상위 3개 나머지 전체
+
+83.0%
+
+USDT + USDC 합계
+
+88.6%
+
+상위 5개 발행사 — 전부 달러 연동
+
+0%
+
+원화 연동 스테이블코인 비중
+
+출처: CoinLaw 집계 기준
 
 상위 5개 발행사가 시장의 88.6%를 차지하는데, 이들이 전부 달러에 연동돼 있습니다.
 
@@ -141,9 +133,7 @@ tags: [원화 스테이블코인, 스테이블코인, 통화주권, CBDC, 크립
 
 저는 3단계 로드맵을 이렇게 짰습니다.
 
-**1단계** 금융권과 대기업의 내부 자금 거래에 한정한 기관용 B2B
-**2단계** 글로벌 공급망 협력사 간 결제로 확대한 B2B
-**3단계** 간편결제와 연동해 소비자 결제까지 넓힌 B2C·C2C, 그리고 CBDC 연계
+**1단계** 금융권과 대기업의 내부 자금 거래에 한정한 기관용 B2B **2단계** 글로벌 공급망 협력사 간 결제로 확대한 B2B **3단계** 간편결제와 연동해 소비자 결제까지 넓힌 B2C·C2C, 그리고 CBDC 연계
 
 그런데 이 로드맵은 **국경 간 거래와 국내 거래를 구분하지 않았습니다.**
 
@@ -161,9 +151,7 @@ tags: [원화 스테이블코인, 스테이블코인, 통화주권, CBDC, 크립
 
 정리하면 세 가지 질문이 남았습니다.
 
-**① 제도는 지금 어디까지 왔는가**
-**② 국내 거래에도 원화 스테이블코인이 필요한가**
-**③ 국경 간 거래라면, 왜 CBDC가 아니라 스테이블코인인가**
+**① 제도는 지금 어디까지 왔는가② 국내 거래에도 원화 스테이블코인이 필요한가③ 국경 간 거래라면, 왜 CBDC가 아니라 스테이블코인인가**
 
 ## 마무리하며
 
