@@ -1,10 +1,15 @@
 ---
-title: "10개월 만에 다시 본 원화 스테이블코인 : 관점이 이렇게 바뀌었습니다 - 2편"
-date: 2026-08-10
+title: 스테이블 코인의 필요성과 전략적 도입 모델 제언 - 2편
+date: '2026-08-10'
 category: 크립토
-tags: [원화 스테이블코인, CBDC, 예금토큰, 디지털자산기본법, RWA, 크립토]
+tags:
+  - 원화 스테이블코인
+  - CBDC
+  - 예금토큰
+  - 디지털자산기본법
+  - RWA
+  - 크립토
 ---
-
 안녕하세요, Asset Log입니다.
 
 1편에서 작년 보고서가 답하지 못한 세 가지 질문을 정리했습니다.
@@ -27,7 +32,63 @@ tags: [원화 스테이블코인, CBDC, 예금토큰, 디지털자산기본법, 
 
 문제는 그 사이 미국이 이미 끝냈다는 점입니다.
 
-<div style="border:1px solid var(--al-divider);border-radius:8px;padding:20px;margin:24px 0;background:var(--al-surface-raised);"><div style="font-size:13px;letter-spacing:0.04em;color:var(--al-text-label);margin-bottom:4px;">스테이블코인 법제화 타임라인</div><div style="font-size:12px;color:var(--al-text-muted);margin-bottom:20px;">미국 · 한국 병렬 비교 (2026년 8월 기준)</div><div style="overflow-x:auto;"><div style="min-width:520px;"><div style="display:grid;grid-template-columns:88px 1fr 1fr;gap:12px;padding-bottom:10px;border-bottom:1px solid var(--al-divider);"><div style="font-size:11px;color:var(--al-text-muted);">시점</div><div style="font-size:12px;color:var(--al-text);font-weight:600;">🇺🇸 미국</div><div style="font-size:12px;color:var(--al-text);font-weight:600;">🇰🇷 한국</div></div><div style="display:grid;grid-template-columns:88px 1fr 1fr;gap:12px;padding:14px 0;border-bottom:1px solid var(--al-divider);"><div style="font-size:12px;color:var(--al-text-label);">2025.6</div><div style="font-size:13px;color:var(--al-text);">6.17 상원 통과<div style="font-size:11px;color:var(--al-text-muted);margin-top:3px;">GENIUS Act · 68 대 30</div></div><div style="font-size:13px;color:var(--al-text);">6.10 디지털자산기본법 발의<div style="font-size:11px;color:var(--al-text-muted);margin-top:3px;">민병덕 의원 대표발의</div></div></div><div style="display:grid;grid-template-columns:88px 1fr 1fr;gap:12px;padding:14px 0;border-bottom:1px solid var(--al-divider);"><div style="font-size:12px;color:var(--al-text-label);">2025.7</div><div style="font-size:13px;color:var(--al-accent);font-weight:600;">7.17 하원 통과 → 7.18 서명·발효<div style="font-size:11px;color:var(--al-text-muted);margin-top:3px;font-weight:400;">308 대 122 · 연방법 성립</div></div><div style="font-size:13px;color:var(--al-text);">지급혁신법 발의<div style="font-size:11px;color:var(--al-text-muted);margin-top:3px;">김은혜 의원</div></div></div><div style="display:grid;grid-template-columns:88px 1fr;gap:12px;padding:12px;margin:10px 0;background:var(--al-surface);border-left:2px solid var(--al-accent);border-radius:3px;"><div style="font-size:12px;color:var(--al-accent);font-weight:600;">2025.10</div><div style="font-size:12px;color:var(--al-text-label);">학술제 보고서 작성 시점 — 이 아래부터가 보고서에 담기지 못한 구간입니다</div></div><div style="display:grid;grid-template-columns:88px 1fr 1fr;gap:12px;padding:14px 0;border-bottom:1px solid var(--al-divider);"><div style="font-size:12px;color:var(--al-text-label);">2026.3</div><div style="font-size:13px;color:var(--al-text-muted);">시행 중</div><div style="font-size:13px;color:var(--al-text);">3.4 제1차 가상자산위원회<div style="font-size:11px;color:var(--al-text-muted);margin-top:3px;">정부 검토안 의견 수렴</div></div></div><div style="display:grid;grid-template-columns:88px 1fr 1fr;gap:12px;padding:14px 0;border-bottom:1px solid var(--al-divider);"><div style="font-size:12px;color:var(--al-text-label);">2026.4</div><div style="font-size:13px;color:var(--al-text-muted);">시행 중</div><div style="font-size:13px;color:var(--al-text);">정무위 법안소위 무산<div style="font-size:11px;color:var(--al-text-muted);margin-top:3px;">논의 사실상 중단</div></div></div><div style="display:grid;grid-template-columns:88px 1fr 1fr;gap:12px;padding:14px 0;"><div style="font-size:12px;color:var(--al-text-label);">2026.8</div><div style="font-size:13px;color:var(--al-accent);font-weight:600;">시행 13개월째</div><div style="font-size:13px;color:var(--al-text);">정무위 소위 계류<div style="font-size:11px;color:var(--al-text-muted);margin-top:3px;">발의 후 14개월째</div></div></div></div></div></div>
+스테이블코인 법제화 타임라인
+
+미국 · 한국 병렬 비교 (2026년 8월 기준)
+
+시점
+
+**🇺🇸 미국**
+
+**🇰🇷 한국**
+
+2025.6
+
+6.17 상원 통과
+
+GENIUS Act · 68 대 30
+
+6.10 디지털자산기본법 발의
+
+민병덕 의원 대표발의
+
+2025.7
+
+**7.17 하원 통과 → 7.18 서명·발효**
+
+308 대 122 · 연방법 성립
+
+지급혁신법 발의
+
+김은혜 의원
+
+**2025.10**
+
+학술제 보고서 작성 시점 — 이 아래부터가 보고서에 담기지 못한 구간입니다
+
+2026.3
+
+시행 중
+
+3.4 제1차 가상자산위원회
+
+정부 검토안 의견 수렴
+
+2026.4
+
+시행 중
+
+정무위 법안소위 무산
+
+논의 사실상 중단
+
+2026.8
+
+**시행 13개월째**
+
+정무위 소위 계류
+
+발의 후 14개월째
 
 두 나라가 거의 같은 시점에 출발했다는 게 이 표의 핵심입니다.
 
@@ -193,7 +254,33 @@ B2B에서 B2C로 넓혀간다는 구도는 거래 규모만 본 것이고, 정�
 
 축을 다시 잡으면 이렇게 됩니다.
 
-<div style="margin:24px 0;"><div style="font-size:13px;letter-spacing:0.04em;color:var(--al-text-label);margin-bottom:4px;">3단계 로드맵 재검토</div><div style="font-size:12px;color:var(--al-text-muted);margin-bottom:14px;">영역별로 작년 보고서의 계획과 지금의 판단을 대조</div><div style="border:1px solid var(--al-divider);border-radius:6px;padding:14px 16px;margin-bottom:10px;background:var(--al-surface-raised);"><div style="display:flex;flex-wrap:wrap;align-items:center;gap:8px;margin-bottom:10px;"><span style="font-size:14px;font-weight:600;color:var(--al-text);word-break:keep-all;">국경 간 기관 결제</span><span style="font-size:11px;font-weight:600;letter-spacing:0.02em;padding:2px 8px;border-radius:99px;white-space:nowrap;background:color-mix(in srgb, var(--al-accent) 22%, var(--al-surface-raised));color:var(--al-text);">보완재로 축소</span></div><div style="display:grid;grid-template-columns:38px 1fr;gap:10px;margin-top:5px;font-size:13px;"><span style="font-size:11px;color:var(--al-text-muted);padding-top:1px;">작년</span><span style="color:var(--al-text-muted);word-break:keep-all;">1단계 — 스테이블코인이 SWIFT를 대체한다</span></div><div style="display:grid;grid-template-columns:38px 1fr;gap:10px;margin-top:5px;font-size:13px;"><span style="font-size:11px;color:var(--al-text-muted);padding-top:1px;">지금</span><span style="color:var(--al-text);word-break:keep-all;">CBDC·예금토큰이 우위(프로젝트 아고라). 스테이블코인은 보완재</span></div></div><div style="border:1px solid var(--al-divider);border-radius:6px;padding:14px 16px;margin-bottom:10px;background:var(--al-surface-raised);"><div style="display:flex;flex-wrap:wrap;align-items:center;gap:8px;margin-bottom:10px;"><span style="font-size:14px;font-weight:600;color:var(--al-text);word-break:keep-all;">국내 기업 간 결제</span><span style="font-size:11px;font-weight:600;letter-spacing:0.02em;padding:2px 8px;border-radius:99px;white-space:nowrap;background:var(--al-divider);color:var(--al-text-muted);">철회</span></div><div style="display:grid;grid-template-columns:38px 1fr;gap:10px;margin-top:5px;font-size:13px;"><span style="font-size:11px;color:var(--al-text-muted);padding-top:1px;">작년</span><span style="color:var(--al-text-muted);word-break:keep-all;">2단계 — 협력사 정산으로 확대</span></div><div style="display:grid;grid-template-columns:38px 1fr;gap:10px;margin-top:5px;font-size:13px;"><span style="font-size:11px;color:var(--al-text-muted);padding-top:1px;">지금</span><span style="color:var(--al-text);word-break:keep-all;">예금토큰(프로젝트 한강)이 그 자리를 차지</span></div></div><div style="border:1px solid var(--al-divider);border-radius:6px;padding:14px 16px;margin-bottom:10px;background:var(--al-surface-raised);"><div style="display:flex;flex-wrap:wrap;align-items:center;gap:8px;margin-bottom:10px;"><span style="font-size:14px;font-weight:600;color:var(--al-text);word-break:keep-all;">국내 소비자 결제</span><span style="font-size:11px;font-weight:600;letter-spacing:0.02em;padding:2px 8px;border-radius:99px;white-space:nowrap;background:var(--al-divider);color:var(--al-text-muted);">철회</span></div><div style="display:grid;grid-template-columns:38px 1fr;gap:10px;margin-top:5px;font-size:13px;"><span style="font-size:11px;color:var(--al-text-muted);padding-top:1px;">작년</span><span style="color:var(--al-text-muted);word-break:keep-all;">3단계 — 간편결제 연동</span></div><div style="display:grid;grid-template-columns:38px 1fr;gap:10px;margin-top:5px;font-size:13px;"><span style="font-size:11px;color:var(--al-text-muted);padding-top:1px;">지금</span><span style="color:var(--al-text);word-break:keep-all;">예금토큰 2단계가 이미 진입</span></div></div><div style="border:1px solid var(--al-divider);border-radius:6px;padding:14px 16px;margin-bottom:10px;background:var(--al-surface-raised);"><div style="display:flex;flex-wrap:wrap;align-items:center;gap:8px;margin-bottom:10px;"><span style="font-size:14px;font-weight:600;color:var(--al-text);word-break:keep-all;">토큰화 자산 거래 결제</span><span style="font-size:11px;font-weight:600;letter-spacing:0.02em;padding:2px 8px;border-radius:99px;white-space:nowrap;background:var(--al-accent);color:var(--al-on-accent);">신규 축</span></div><div style="display:grid;grid-template-columns:38px 1fr;gap:10px;margin-top:5px;font-size:13px;"><span style="font-size:11px;color:var(--al-text-muted);padding-top:1px;">작년</span><span style="color:var(--al-text-muted);word-break:keep-all;">언급 없음</span></div><div style="display:grid;grid-template-columns:38px 1fr;gap:10px;margin-top:5px;font-size:13px;"><span style="font-size:11px;color:var(--al-text-muted);padding-top:1px;">지금</span><span style="color:var(--al-text);word-break:keep-all;">여기가 스테이블코인의 자리</span></div></div></div>
+3단계 로드맵 재검토
+
+영역별로 작년 보고서의 계획과 지금의 판단을 대조
+
+**국경 간 기관 결제보완재로 축소**
+
+작년1단계 — 스테이블코인이 SWIFT를 대체한다
+
+지금CBDC·예금토큰이 우위(프로젝트 아고라). 스테이블코인은 보완재
+
+**국내 기업 간 결제철회**
+
+작년2단계 — 협력사 정산으로 확대
+
+지금예금토큰(프로젝트 한강)이 그 자리를 차지
+
+**국내 소비자 결제철회**
+
+작년3단계 — 간편결제 연동
+
+지금예금토큰 2단계가 이미 진입
+
+**토큰화 자산 거래 결제신규 축**
+
+작년언급 없음
+
+지금여기가 스테이블코인의 자리
 
 유지되는 것과 폐기되는 것을 정리하면 이렇습니다.
 
